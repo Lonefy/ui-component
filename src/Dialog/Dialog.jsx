@@ -1,6 +1,11 @@
-// components
+/*
+ * author: Fuyu@lonefy
+ * create time: 2016-11-10
+ */ 
 import React    from 'react';
 import ReactDom from 'react-dom';
+
+import Mask from '../common/Mask.jsx';
 
 class Dialog extends React.Component {
     constructor(props) {
@@ -25,7 +30,7 @@ class Dialog extends React.Component {
                 className="dialog-wrapper"
                 style={{ display: this.props.show ? "initial" : 'none' }}
                 >
-                <div className='mask'></div>
+                <Mask></Mask>
                 <div ref='content'
                     className="dialog-content"
                     >
